@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ViewActivity">
+
+
+<!--button for adding data-->
+<Button
+    android:id="@+id/postBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="ADD NEW USER"
+    android:textAllCaps="false" />
+
+    <!--recycler view for displaying our API response-->
+
+
+
+    <!--progress bar for loading
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/row_recyclerview"/>
+-->
+    <TextView
+        android:id="@+id/allUsersTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scrollbars = "vertical"
+        />
+    <ProgressBar
+    android:id="@+id/idLoadingPB"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:visibility="gone"
+        android:tooltipText="please wait for sec"/>
+
+</LinearLayout>
