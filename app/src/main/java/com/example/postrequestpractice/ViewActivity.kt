@@ -54,8 +54,8 @@ class ViewActivity : AppCompatActivity() {
             override fun onResponse(call: Call<ArrayList<User.UserItem>>, response: Response<ArrayList<User.UserItem>>) {
 
                 for(user in response.body()!!){
-                    usersText += user.name + "\n" + user.location + "\n\n"
-                    Log.d("safff","userrrrrrrrr" + usersText)
+                    usersText += "name: ${user.name}" + "\n" + "location: ${user.location}" + "\n" + "id: ${user.pk}"+ "\n\n"
+
                 }
                 binding.idLoadingPB.isVisible = false
 
@@ -65,7 +65,7 @@ class ViewActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<ArrayList<User.UserItem>>, t: Throwable) {
-                Log.d("errror", "${t}")
+                Log.d("errror", "$t")
             }
 //
        })

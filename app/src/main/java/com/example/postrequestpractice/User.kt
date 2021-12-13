@@ -8,6 +8,6 @@ class User {
     class UserItem(
         val name: String,
         val location: String,
-        val id : Int? = null
+        val pk : Int? = null
     )
 }
