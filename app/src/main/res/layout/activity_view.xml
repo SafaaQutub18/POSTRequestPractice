@@ -6,17 +6,27 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".ViewActivity">
+    tools:context=".ViewActivity"
+    android:background="@drawable/gradient_backg"
+    >
 
 
 <!--button for adding data-->
 <Button
-    android:id="@+id/postBtn"
+    android:id="@+id/editBtn"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
-    android:text="ADD NEW USER"
+    android:text="UPDATE/DELETE USER"
     android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/postBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ADD NEW USER"
+        android:textAllCaps="false" />
 
     <!--recycler view for displaying our API response-->
 

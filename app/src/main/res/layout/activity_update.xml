@@ -15,7 +15,7 @@
         android:layout_marginBottom="40dp"
         android:fontFamily="casual"
         android:padding="10dp"
-        android:text="ADD NEW USER"
+        android:text="Edit / DELETE USER"
         android:textAlignment="center"
         android:textColor="@color/pink"
         android:textSize="24sp"
@@ -42,27 +42,50 @@
         android:layout_marginTop="30dp"
         android:hint="Enter your location"
         android:minHeight="48dp" />
-
-    <!--button for adding data-->
-    <Button
-        android:id="@+id/postBtn"
+    <EditText
+        android:id="@+id/idET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="Save the user"
-         />
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:hint="Enter user id"
+        android:minHeight="48dp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        >
+
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="Edit user info"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="delete the user" />
+
+
+    </LinearLayout>
     <!--button for adding data-->
 
-    <!--text view for displaying our API response-->
 
-    <!--progress bar for loading -->
+
     <Button
         android:id="@+id/viewBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="View the users"
+        android:text="View All users"
         />
 
     <ProgressBar

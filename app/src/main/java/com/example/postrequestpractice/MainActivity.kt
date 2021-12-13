@@ -58,7 +58,6 @@ class MainActivity : AppCompatActivity() {
                 // below line is for hiding our progress bar.
                 binding.loadingPB.visibility = View.GONE;
 
-
                 binding.nameET.setText("")
                 binding.locationET.setText("");
 

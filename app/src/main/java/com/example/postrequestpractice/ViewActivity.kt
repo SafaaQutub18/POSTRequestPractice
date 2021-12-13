@@ -32,6 +32,11 @@ class ViewActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.editBtn.setOnClickListener {
+            intent = Intent(applicationContext, UpdateActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun getUsers() {
